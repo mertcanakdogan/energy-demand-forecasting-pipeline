@@ -1,0 +1,3 @@
+code,message,count,severity
+duplicate_reading,Duplicate meter_id/timestamp combinations found,378,error
+missing_timestamp,Hourly gaps found within meter histories,900,error

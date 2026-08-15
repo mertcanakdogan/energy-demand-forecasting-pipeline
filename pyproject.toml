@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "energy-demand-forecasting-pipeline"
+version = "0.1.0"
+description = "Production-style hourly energy-demand forecasting with synthetic data"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Portfolio Project" }]
+dependencies = [
+  "matplotlib>=3.9,<4",
+  "numpy>=2.0,<2.4",
+  "pandas>=2.2,<3",
+  "PyYAML>=6.0,<7",
+  "statsmodels>=0.14,<0.15",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=9.0.3,<10",
+  "pytest-cov>=7,<8",
+]
+
+[project.scripts]
+energy-forecast-demo = "energy_forecasting.pipeline:main"
+energy-generate-data = "energy_forecasting.synthetic_data:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["energy_forecasting"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true

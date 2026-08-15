@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.idea/
+.vscode/
+.ipynb_checkpoints/
+.agent/
+
+# Full generated data and non-example run artefacts
+data/generated/
+outputs/runs/

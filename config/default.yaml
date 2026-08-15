@@ -1,0 +1,27 @@
+seed: 42
+data:
+  n_meters: 100
+  n_groups: 12
+  start: "2025-01-01 00:00:00"
+  months: 13
+  missing_rate: 0.001
+  duplicate_rate: 0.0002
+  anomaly_rate: 0.0008
+backtest:
+  horizon: 24
+  folds: 2
+  step_hours: 168
+  min_train_hours: 672
+  max_train_hours: 1344
+models:
+  - seasonal_naive
+  - weighted_baseline
+  - holt_winters
+  - sarimax
+forecast_horizon: 24
+anomaly:
+  positive_threshold: 0.60
+  negative_threshold: -0.60
+  severe_threshold: 1.20
+output_dir: outputs/examples
+generated_data_path: data/generated/synthetic_meter_data.csv

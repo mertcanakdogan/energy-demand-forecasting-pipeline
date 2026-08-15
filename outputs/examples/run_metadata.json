@@ -1,0 +1,33 @@
+{
+  "anomaly_count": 3290,
+  "backtest_folds": 2,
+  "elapsed_seconds": 102.985,
+  "forecast_horizon": 24,
+  "history_end": "2026-01-31T23:00:00",
+  "history_start": "2025-01-01T00:00:00",
+  "mean_selected_mae": 0.742903,
+  "mean_selected_wape": 0.078629,
+  "models": [
+    "seasonal_naive",
+    "weighted_baseline",
+    "holt_winters",
+    "sarimax"
+  ],
+  "n_groups": 12,
+  "n_meters": 100,
+  "portfolio_forecast_kwh": 22856.386,
+  "prepared_rows": 950400,
+  "raw_rows": 949689,
+  "seed": 42,
+  "selected_model_counts": {
+    "holt_winters": 13,
+    "sarimax": 60,
+    "seasonal_naive": 26,
+    "weighted_baseline": 1
+  },
+  "synthetic_only": true,
+  "validation_issue_counts": {
+    "duplicate_reading": 378,
+    "missing_timestamp": 900
+  }
+}
