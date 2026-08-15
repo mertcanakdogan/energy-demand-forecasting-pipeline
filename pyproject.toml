@@ -9,7 +9,7 @@ description = "Production-style hourly energy-demand forecasting with synthetic 
 readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "MIT" }
-authors = [{ name = "Portfolio Project" }]
+authors = [{ name = "Mert Can Akdoğan" }]
 dependencies = [
   "matplotlib>=3.9,<4",
   "numpy>=2.0,<2.4",
