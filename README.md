@@ -1,3 +1,5 @@
+[![Tests](https://github.com/mertcanakdogan/energy-demand-forecasting-pipeline/actions/workflows/tests.yml/badge.svg)](https://github.com/mertcanakdogan/energy-demand-forecasting-pipeline/actions/workflows/tests.yml)
+
 # Production-Style Energy Demand Forecasting Pipeline
 
 End-to-end hourly electricity-demand forecasting with rolling backtesting, automatic model selection, anomaly detection and reproducible synthetic data.
