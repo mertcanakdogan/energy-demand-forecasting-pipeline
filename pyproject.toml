@@ -12,10 +12,10 @@ license = { text = "MIT" }
 authors = [{ name = "Mert Can Akdoğan" }]
 dependencies = [
   "matplotlib>=3.9,<4",
-  "numpy>=2.0,<2.4",
-  "pandas>=2.2,<3",
+  "numpy>=2.0,<3",
+  "pandas>=2.2,<4",
   "PyYAML>=6.0,<7",
-  "statsmodels>=0.14,<0.15",
+  "statsmodels>=0.14,<0.16",
 ]
 
 [project.optional-dependencies]

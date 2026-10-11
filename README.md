@@ -207,7 +207,7 @@ energy-demand-forecasting-pipeline/
 
 ## Installation
 
-Python 3.12 is the supported version.
+Python 3.12 to 3.15 are supported; 3.15 is the latest release and is tested in CI.
 
 ```bash
 git clone <repository-url>
@@ -291,7 +291,7 @@ python -m pytest --cov=energy_forecasting --cov-report=term-missing
 
 The suite covers deterministic generation, schema and continuity errors, metric edge cases, every model's forecast contract, leakage-safe folds, failure isolation, fallback selection, aggregation reconciliation, anomaly labels, chart creation, and reproducible end-to-end execution. Tests use only temporary synthetic fixtures and require no external services.
 
-GitHub Actions runs the package installation and pytest coverage command on Python 3.12 for every push and pull request.
+GitHub Actions runs the package installation and pytest coverage command on Python 3.12 and 3.15 for every push and pull request.
 
 ## Limitations
 

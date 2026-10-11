@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+### Changed
+
+- Support Python 3.15: CI tests 3.12 and 3.15; dependency ranges now allow numpy 2.x, pandas 3 and statsmodels 0.15 (the first versions with Python 3.15 builds).
+
 ### Added
 
 - Clean-room synthetic smart-meter data generation with deterministic quality events.
